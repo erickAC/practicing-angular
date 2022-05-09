@@ -12,14 +12,23 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class ContactReadComponent implements OnInit {
 
   contacts!: Contato[]; 
+  favorite?: boolean;
 
   constructor(private http: HttpClient, private contatoService: ContatoService) { }
 
   ngOnInit(): void {
     this.contatoService.read().subscribe(c => {
       this.contacts = c;
+      this.setFavorite(this.contacts);
       console.log(c);
     });
   }
+  
+  setFavorite(contact: Contato[]): void {
+    this.contacts.forEach(x => {
+      this.favorite = x.favorite;
+    });
+  }
+
 
 }

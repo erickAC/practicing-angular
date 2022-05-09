@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { ContactFavoriteComponent } from './components/contacts/contact-favorite/contact-favorite.component';
 import { ContactCreateComponent } from './components/contacts/contact-create/contact-create.component';
 import { ContactUpdateComponent } from './components/contacts/contact-update/contact-update.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ContactUpdateComponent } from './components/contacts/contact-update/con
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     HttpClientModule, 
     FormsModule

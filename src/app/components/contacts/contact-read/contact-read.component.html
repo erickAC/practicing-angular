@@ -13,14 +13,14 @@
             <td>
                 <a class="btn btn-success" routerLink="/contact/update/{{ contact.id }}"><i class="bi bi-pencil"></i></a>
                 <a class="btn btn-danger" routerLink="/contact/delete/{{ contact.id }}"><i class="bi bi-trash3"></i></a>
-                <div *ngIf="contact.favorite">
-                    <a class="btn btn-primary" routerLink="/contact/favorito/{{ contact.id }}">
-                        <i class="bi bi-heart"></i>
-                    </a>
-                </div>
-                <div *ngIf="contact.favorite == false">
+                <ng-template *ngIf="!favorite == true">
                     <a class="btn btn-primary" routerLink="/contact/favorito/{{ contact.id }}">
                         <i class="bi bi-heart-fill"></i>
+                    </a>
+                </ng-template>
+                <div *ngIf="!favorite">
+                    <a class="btn btn-primary" routerLink="/contact/favorito/{{ contact.id }}">
+                        <i class="bi bi-heart"></i>
                     </a>
                 </div>
             </td>

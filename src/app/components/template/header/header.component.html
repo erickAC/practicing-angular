@@ -1,0 +1,17 @@
+<div class="header">
+    <div class="title">
+        <h3><b>Contatos</b></h3>
+    </div>
+    <div class="icons">
+        <div><i class="bi bi-search"></i></div>
+        <div *ngIf="favorite" (click)="alterFavorite()">
+            <i class="bi bi-heart"></i>
+        </div>
+        <div *ngIf="favorite == false" (click)="alterFavorite()">
+            <i class="bi bi-heart-fill"></i>
+        </div>
+    </div>
+    <div class="profile">
+        <i class="bi bi-person-circle"></i>
+    </div>
+</div>

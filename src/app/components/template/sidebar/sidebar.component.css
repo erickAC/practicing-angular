@@ -1,0 +1,52 @@
+.sidebar{
+    padding: 37px 0;
+    background-color: #363740;
+    height: 100vh;
+    color: white;
+}
+
+.sidebar > .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.sidebar > .logo > span {
+    margin-left: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.list-group {
+    margin-top: 60px;
+    display: flex;
+}
+
+.list-group-item {
+    padding: 20px 31px;
+    width: 100%;
+    color: #A4A6B3;
+    border: 0;
+    background-color: transparent;
+    vertical-align: middle;
+    transition: 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #9fa2b438;
+    color: white;
+    border-left: 5px solid white;
+}
+
+.list-group-item:active {
+    background-color: #9fa2b438;
+    color: white;
+    border-left: 5px solid white;
+}
+
+.list-group-item > span {
+    padding-left: 26px;
+    font-size: 16px;
+}

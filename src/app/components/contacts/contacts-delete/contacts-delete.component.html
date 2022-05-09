@@ -1,0 +1,10 @@
+<form class="form-group mt-5">
+    <label>ID:</label>
+    <input class="form-control" [(ngModel)]="contact.id" name="id" type="text" disabled>
+    <label>Nome</label>
+    <input class="form-control" [(ngModel)]="contact.nome" name="nome" type="text" disabled>
+    <label>Email</label>
+    <input class="form-control" [(ngModel)]="contact.email" name="email" type="text" disabled>    
+    <button class="btn btn-primary mt-5" (click)="deleteContact()">Excluir</button>
+    <button class="btn mt-5" (click)="backToHome()">Voltar</button>
+</form>

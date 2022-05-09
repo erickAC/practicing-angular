@@ -1,0 +1,8 @@
+<form class="form-group mt-5">
+    <label>Nome</label>
+    <input class="form-control" [(ngModel)]="contact.nome" name="nome" type="text">
+    <label>Email</label>
+    <input class="form-control" [(ngModel)]="contact.email" name="email" type="text">    
+    <button class="btn btn-primary mt-5" (click)="saveContact()">Salvar </button>
+    <button class="btn mt-5" (click)="backToHome()">Voltar</button>
+</form>
